@@ -19,6 +19,11 @@
 \usepackage{cite}
 \usepackage{layouts}
 \usepackage{tabularx}
+\usepackage[table]{xcolor}
+
+\colorlet{customGreen}{green!70!yellow!40}
+\colorlet{tableGreen}{customGreen!80}
+\colorlet{tableRed}{red!30!}
 
 % Отступы у страниц
 \usepackage{geometry}
@@ -39,6 +44,12 @@
 
 % Гиперссылки
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks, urlcolor={blue}, % Все ссылки черного цвета, кликабельные
+    linkcolor={black}, citecolor={blue}, filecolor={black},
+    pdfauthor={Serhii Moskovko},
+    pdftitle={Modern minimal JavaScript frameworks}
+}
 
 \sloppy             % Избавляемся от переполнений
 \hyphenpenalty=1000 % Частота переносов
